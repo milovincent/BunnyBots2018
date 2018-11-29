@@ -1,7 +1,7 @@
 plugins {
     id "java"
     id "edu.wpi.first.GradleRIO" version "2019.0.0-alpha-3"
-    id "com.snobot.simulator.plugin.SnobotSimulatorPlugin" version "2018-1.0.0" // Should point to the latest version at https://login.gradle.org/plugin/com.snobot.simulator.plugin.SnobotSimulatorPlugin
+//    id "com.snobot.simulator.plugin.SnobotSimulatorPlugin" version "2018-1.0.0" // Should point to the latest version at https://login.gradle.org/plugin/com.snobot.simulator.plugin.SnobotSimulatorPlugin
 }
 
 def ROBOT_CLASS = "frc.robot.Robot"
@@ -33,8 +33,8 @@ dependencies {
     compile wpilib()
     compile ctre()
     compile navx()
-    testCompile snobotSimCompile()
-    testCompile snobotSimJavaCompile() //TODO execute task runSnobotSim?????
+//    testCompile snobotSimCompile()
+//    testCompile snobotSimJavaCompile() //TODO execute task runSnobotSim?????
 }
 
 // Setting up my Jar File. In this case, adding all libraries into the main jar ('fat jar')
